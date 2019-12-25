@@ -4,7 +4,6 @@
 #
 
 name: PR Bad Target
-
 on:
   pull_request:
     branches:
