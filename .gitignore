@@ -184,3 +184,8 @@ cmake-build-*
 
 #Python
 __pycache__
+
+
+node_modules
+cworksace.code-workspace
+marlin.code-workspace
