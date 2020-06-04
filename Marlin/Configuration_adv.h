@@ -515,19 +515,10 @@
   #endif
 #endif
 
-#define Z_DUAL_STEPPER_DRIVERS
-#if ENABLED(Z_DUAL_STEPPER_DRIVERS)
-  #define Z_DUAL_ENDSTOPS
-  #if ENABLED(Z_DUAL_ENDSTOPS)
-    #define Z2_USE_ENDSTOP _ZMAX_
-    #define Z_DUAL_ENDSTOPS_ADJUSTMENT  0
-  #endif
-#endif
-
 //
 // For Z set the number of stepper drivers
 //
-#define NUM_Z_STEPPER_DRIVERS 1   // (1-4) Z options change based on how many
+#define NUM_Z_STEPPER_DRIVERS 2   // (1-4) Z options change based on how many
 
 #if NUM_Z_STEPPER_DRIVERS > 1
   //#define Z_MULTI_ENDSTOPS
@@ -690,7 +681,7 @@
   // Define probe X and Y positions for Z1, Z2 [, Z3 [, Z4]]
   // If not defined, probe limits will be used.
   // Override with 'M422 S<index> X<pos> Y<pos>'
-  #define Z_STEPPER_ALIGN_XY { { 10, 150 }, { 290,  150 } }
+  #define Z_STEPPER_ALIGN_XY { { 20, 150 }, { 246,  150 } }
 
   /**
    * Orientation for the automatically-calculated probe positions.
